@@ -12,6 +12,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     marginBottom: 60
+  },
+  inputContainer: {
+    width: "80%",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
 

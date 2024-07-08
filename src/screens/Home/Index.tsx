@@ -1,8 +1,12 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
+
 import styles from "./Style";
+
 import { Logo } from "../../components/Logo/Index";
+import { AppTextInput } from "../../components/AppTextInput/Index";
+import { GenerateButton } from "../../components/GenerateButton/Index";
 
 export default function Home() {
   return (
@@ -10,8 +14,12 @@ export default function Home() {
       <View style={styles.logoContainer}>
         <Logo />
       </View>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+      <View style={styles.inputContainer}>
+        <GenerateButton />
+      </View>
+
+      <StatusBar style="light" />
     </View>
   );
 }
